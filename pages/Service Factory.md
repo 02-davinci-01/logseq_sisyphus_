@@ -1,0 +1,3 @@
+- TAGS: #Guideline, [[System-Design]]
+- A service factory relies on a centralized factory that produces the appropriate implementation instance of the required service #system-design
+- All the implementation is not controlled by the factory itself, but by sharing a common interface. The interface itself acts like an intelligent glue between the factory and the concrete implementation. #system-design
