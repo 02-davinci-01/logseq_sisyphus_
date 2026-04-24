@@ -1,3 +1,7 @@
+TAGS:: #javascript 
+STATUS:: [[completed]] 
+CREATED:: [[9th Apr 2026]]
+
 - Converts code metadata into a standard API description then renders a UI on top of it.
 - ## NestJS and Swagger
 	- When we write @Get(), metadata is already added to the particular function. Something like:

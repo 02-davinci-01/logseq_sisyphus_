@@ -1,2 +1,2 @@
 - Now the guideline as we can see has both the references. So if they would be in different pages it would show the different pages.
--
+- I see pretty neat

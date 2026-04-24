@@ -9,7 +9,7 @@ ROOT + TYPOGRAPHY
 :root {
 --ls-font-family: "JetBrains Mono", monospace;
   
- --ls-page-mark-bg-color: rgba(137, 180, 250, 0.18) !important;
+ --ls-page-mark-bg-color: rgba(0, 122, 255, 0.22) !important;
 }
 
 body {
@@ -188,22 +188,39 @@ opacity: 0.85;
 }
 
 
-mark,
-.ls-highlight,
-.tag + mark {
-  background: rgba(137, 180, 250, 0.12) !important;
+[data-ref="ongoing"] {
+  background: rgba(255, 165, 0, 0.14);
+  color: #ffd8a8;
+  border: 1px solid rgba(255, 165, 0, 0.35);
+  border-radius: 6px;
+  padding: 1px 6px;
+  box-shadow: 0 0 6px rgba(255, 165, 0, 0.12);
+}
 
-  color: #bcdcff !important; /* soft readable blue */
+[data-ref="completed"] {
+  background: rgba(80, 250, 123, 0.14);
+  color: #b9fbc0;
+  border: 1px solid rgba(80, 250, 123, 0.35);
+  border-radius: 6px;
+  padding: 1px 6px;
+  box-shadow: 0 0 6px rgba(80, 250, 123, 0.12);
+}
 
-  border: 1px solid rgba(137, 180, 250, 0.28);
+[data-ref="eternal"] {
+  background: rgba(180, 180, 180, 0.10);
+  color: #d4d4d4;
+
+  border: 1px solid rgba(180, 180, 180, 0.25);
   border-radius: 6px;
 
-  padding: 1px 4px;
+  padding: 1px 6px;
 
-  box-shadow: 0 0 6px rgba(137, 180, 250, 0.10);
+  box-shadow: 0 0 6px rgba(180, 180, 180, 0.10);
+}
 
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+
+
+
 }
 */
 

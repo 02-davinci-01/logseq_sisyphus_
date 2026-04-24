@@ -420,13 +420,12 @@
  ;;      ;use Percent-encoding for other invalid characters
  :file/name-format :triple-lowbar
  :graph/settings {:journal? true
- :builtin-pages? true
- :excluded-pages? false}
+ :builtin-pages? true}
  :graph/forcesettings {:charge-range 800}
  :journal/page-title-format "do MMM yyyy"}
 
 :macros {
   "ongoing" "(status:: ongoing)"
   "done" "(status:: completed)"
-  "eternal" "(status:: eternal)"
+  "eternal" "(status:: [[eternal]])"
 }

@@ -419,7 +419,14 @@
  ;;      ;use triple underscore `___` for slash `/` in page title
  ;;      ;use Percent-encoding for other invalid characters
  :file/name-format :triple-lowbar
- :graph/settings {:journal? true
- :builtin-pages? true}
+ :graph/settings {:journal? false
+ :builtin-pages? true
+ :excluded-pages? true}
  :graph/forcesettings {:charge-range 800}
- :journal/page-title-format "EEEE, dd-MM-yyyy"}
+ :journal/page-title-format "do MMM yyyy"}
+
+:macros {
+  "ongoing" "(status:: ongoing)"
+  "done" "(status:: completed)"
+  "eternal" "(status:: eternal)"
+}

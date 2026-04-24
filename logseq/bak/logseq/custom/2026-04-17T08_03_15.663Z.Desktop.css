@@ -177,33 +177,62 @@ OPTIONAL: ULTRA MINIMAL MODE
 .cp__right-sidebar,
 .cp__sidebar-left {
 opacity: 0.85;
+/* Thick block cursor for Logseq */
+.ls-block .caret {
+  width: 8px; /* Adjust thickness */
+  background-color: var(--ls-primary-text-color); /* Matches text color */
+  opacity: 0.5; /* Optional: adds transparency */
+}
 
-/* Thick vertical cursor (recommended stable option) */
-.cm-content {
-  caret-color: rgba(255, 255, 255, 0.9);
+
+
+[data-ref="ongoing"] {
+  background: rgba(255, 165, 0, 0.14);
+  color: #ffd8a8;
+  border: 1px solid rgba(255, 165, 0, 0.35);
+  border-radius: 6px;
+  padding: 1px 6px;
+  box-shadow: 0 0 6px rgba(255, 165, 0, 0.12);
+}
+
+[data-ref="completed"] {
+  background: rgba(80, 250, 123, 0.14);
+  color: #b9fbc0;
+  border: 1px solid rgba(80, 250, 123, 0.35);
+  border-radius: 6px;
+  padding: 1px 6px;
+  box-shadow: 0 0 6px rgba(80, 250, 123, 0.12);
+}
+
+[data-ref="eternal"] {
+  background: rgba(180, 180, 180, 0.10);
+  color: #d4d4d4;
+
+  border: 1px solid rgba(180, 180, 180, 0.25);
+  border-radius: 6px;
+
+  padding: 1px 6px;
+
+  box-shadow: 0 0 6px rgba(180, 180, 180, 0.10);
+}
+/* Make the cursor a thick block */
+.cm-cursor {
+  border-left: 8px solid #00ff00 !important; /* Adjust thickness (8px) and color */
+  opacity: 0.8 !important; /* Slightly transparent for visibility */
+}
+
+/* Optional: Make the block blink like a terminal */
+@keyframes blink {
+  50% { opacity: 0; }
 }
 
 .cm-cursor {
-  border-left: 3px solid rgba(255, 255, 255, 0.9) !important;
+  animation: blink 1s step-end infinite;
 }
 
 
-mark,
-.ls-highlight,
-.tag + mark {
-  background: rgba(0, 122, 255, 0.22) !important;
 
-  color: #d6e8ff !important;
 
-  border: 1px solid rgba(0, 122, 255, 0.5);
-  border-radius: 5px;
-
-  padding: 0 3px;
-
-  box-shadow: 0 0 6px rgba(0, 122, 255, 0.15);
-
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
 
 }
 */
